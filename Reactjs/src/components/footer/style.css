@@ -1,0 +1,22 @@
+#footer-page {
+    background: #5493ceda;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+}
+
+#footer-page h4{
+    color: #fbfbfb;
+    font-size: 1.3rem;
+}
+
+#footer-page h4 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer-page h4 a:hover{
+    color: #F3F4F5;
+}
