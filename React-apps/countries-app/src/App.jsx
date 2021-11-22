@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from './app/components/Button/Button';
-import { fetchData } from './app/api';
-import CountryPicker from './app/components/CountryPicker';
-import Input from './app/components/Input';
+import CountryPicker from './app/components/CountryPicker/CountryPicker';
+
 
 const AppConatiner  = styled.div`
  display: flex;
@@ -68,6 +67,7 @@ justify-content: space-around;
 align-items: center;
 height: 20%;
 width: 100%;
+
 `;
 
 const ButtonContainer = styled.div`
@@ -113,17 +113,7 @@ font-size: small;
    height:97vh;
    }
 `;
-const FlagConatiner = styled.div`
 
-letter-spacing: 0.2rem;
-width:65%;
-height:3rem;
-border:none;
-color: #000000;
-border-radius: 2rem;
-cursor: pointer;
-
-`;
 const TextInfo = styled.label`
 display: flex;
 font-weight: 200rem;
@@ -143,7 +133,6 @@ function App(){
         </TitleSection>
         <InputContainer>
         <CountryPicker  />
-      {/* <Input type="Text" placeholder="Digite o nome do pais ou cidade" /> */}
         </InputContainer>
         <ButtonContainer>
           <Button type="submit" content="Pesquisar"></Button>
